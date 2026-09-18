@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#153f32">
+  <meta name="description" content="Cadastro dos participantes do Lab de Tráfego Pago da Conferência Smart Empreender, Igreja da Árvore, para liberação do acesso ao curso.">
+  <meta property="og:title" content="Lab de Tráfego Pago · Smart Empreender">
+  <meta property="og:description" content="Participou do Lab? Cadastre seu e-mail para receber acesso ao curso.">
+  <meta name="referrer" content="no-referrer">
+  <title>Lab de Tráfego Pago · Smart Empreender</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="form.js" defer></script>
+</head>
+<body>
+  <main>
+    <header class="event"><span class="brand">SMART<span class="brand-light"> EMPREENDER</span></span><span class="church">Conferência · Igreja da Árvore</span></header>
+    <section class="card" aria-labelledby="title">
+      <div class="intro"><span class="eyebrow">LAB DE TRÁFEGO PAGO</span><h1 id="title">Seu próximo passo<br>começa aqui.</h1><p>Preencha seus dados para receber acesso ao curso após o Lab.</p></div>
+      <form id="registration">
+        <div class="field"><label for="name">Nome completo</label><input id="name" name="name" autocomplete="name" placeholder="Como você se chama?" required minlength="2" maxlength="120"></div>
+        <div class="field"><label for="company">Empresa</label><input id="company" name="company" autocomplete="organization" placeholder="Nome da sua empresa" required maxlength="160" aria-describedby="company-help"><small id="company-help">Se não tiver empresa, escreva “Autônomo” ou “Não tenho”.</small></div>
+        <div class="field"><label for="email">E-mail</label><input id="email" name="email" type="email" autocomplete="email" inputmode="email" autocapitalize="none" spellcheck="false" placeholder="voce@exemplo.com" required maxlength="254" aria-describedby="email-help"><small id="email-help">O acesso ao curso será liberado para este e-mail.</small></div>
+        <div class="field"><label for="emailConfirmation">Confirme seu e-mail</label><input id="emailConfirmation" name="emailConfirmation" type="email" autocomplete="off" inputmode="email" autocapitalize="none" spellcheck="false" placeholder="Digite seu e-mail novamente" required maxlength="254" aria-describedby="confirmation-error"><small id="confirmation-error" class="error" aria-live="polite"></small></div>
+        <div class="trap" aria-hidden="true"><label for="website">Deixe em branco</label><input id="website" name="website" tabindex="-1" autocomplete="off"></div>
+        <p class="privacy">Seus dados serão usados pela organização do Lab para identificar sua participação e liberar o acesso ao curso.</p>
+        <button id="submit" type="submit">Cadastrar para receber acesso <span aria-hidden="true">↗</span></button>
+        <p id="status" class="error" role="alert"></p>
+        <noscript><p>Ative o JavaScript do navegador para enviar seu cadastro.</p></noscript>
+      </form>
+      <div id="success" hidden tabindex="-1">
+        <span class="success-icon" aria-hidden="true">✓</span><h2>Cadastro recebido!</h2><p>Seu e-mail foi registrado:</p><strong id="saved-email"></strong><p>A organização usará esse endereço para liberar seu acesso ao curso.</p><button id="another" type="button" class="secondary">Cadastrar outra pessoa</button>
+      </div>
+    </section>
+    <footer>Conexões que impulsionam. Conhecimento que transforma.</footer>
+  </main>
+</body>
+</html>
