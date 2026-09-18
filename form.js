@@ -1,4 +1,4 @@
-const ENDPOINT = 'https://smart-empreender-lab.true-lark-5834.chatgpt.site/api/register';
+const ENDPOINT = 'https://smart-empreender-lab.fhellipe00.chatgpt.site/api/register';
 const form = document.getElementById('registration');
 const email = document.getElementById('email');
 const confirmation = document.getElementById('emailConfirmation');
